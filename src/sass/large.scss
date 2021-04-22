@@ -1,0 +1,141 @@
+$thirdMainColor: rgb(0, 188, 209);
+$lightWhite: rgb(255, 255, 255);
+$mainColor: rgb(35, 100, 170);
+
+@media (min-width: 992px) {
+    .nav {
+        position: relative;
+        top: 10vh;
+        height: 10vh;
+        margin: 0 auto;
+        background-color: transparent;
+        &__links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            top: 0vh;
+            height: 8vh;
+            width: 100%;
+            box-shadow: 0 0 15px rgb(54, 54, 54);
+            border-radius: 10px;
+            background-color: $lightWhite;
+            transform: translateX(0%);
+
+        }
+
+        &__link {
+            padding: 6px;
+            // color: $lightWhite;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 35px;
+                content: '';
+                height: 2px;
+                width: 100%;
+                background-color: $thirdMainColor;
+                ;
+                transform: scaleX(0);
+                transition: transform .3s;
+            }
+
+            &:hover::before {
+                transform: scaleX(1)
+            }
+        }
+
+        &__logo {
+            position: absolute;
+            top: -60px;
+            left: 0;
+        }
+
+        &__burger {
+            display: none;
+        }
+
+        &__burger-contact {
+            display: none;
+        }
+
+        &__contact {
+            top: -10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            font-size: 1.6rem;
+            background: transparent;
+            color: $lightWhite;
+            opacity: 1;
+
+            .fas {
+                background: none;
+                color: $thirdMainColor;
+            }
+
+            &-adress {
+                margin-left: 40px;
+            }
+
+            &-phone {
+                padding: 0;
+            }
+        }
+    }
+
+    .header {
+        height: 90vh;
+
+        &__top-logo {
+            display: block;
+        }
+    }
+
+    .info {
+        display: flex;
+        position: relative;
+        top: -80px;
+        z-index: 1;
+    }
+
+    .aboutUs {
+        display: flex;
+
+        &__img {
+            display: block;
+            width: 600px;
+            height: 550px;
+            padding-left: 1em;
+        }
+    }
+
+    .horizontal {
+        padding: 3em;
+    }
+
+    .departments {
+        &__card {
+            width: 300px;
+        }
+    }
+
+    .contact {
+        &__box {
+            display: flex;
+            justify-content: space-around;
+
+            &-left,
+            &-right {
+                width: 50%;
+            }
+
+            &-right {
+                margin-left: 1.5em;
+            }
+        }
+    }
+
+
+}

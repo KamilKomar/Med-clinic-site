@@ -1,0 +1,12 @@
+@mixin btn {
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        transition: background-color .3s;
+
+}

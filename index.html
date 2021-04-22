@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f3ca5611b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav wrapper">
+            <button class="nav__burger"><i class="fas fa-bars"></i></button>
+            <a href="#" class="nav__logo "><i class="fab fa-medrt"></i>Med<span>Care</span></a>
+            <ul class="nav__links">
+                <li><a href="#aboutUs" class="nav__link">O Nas</a></li>
+                <li><a href="#departments" class="nav__link">Oddziały</a></li>
+                <li><a href="#team" class="nav__link">Lekarze</a></li>
+                <li><a href="#gallery" class="nav__link">Galeria</a></li>
+                <li><a href="#contact" class="nav__link">Kontakt</a></li>
+            </ul>
+            <button class="nav__burger-contact"><i class="fas fa-ellipsis-v"></i></button>
+            <div class="nav__contact ">
+                <div class="nav__contact-phone">
+                    <i class="fas fa-phone"></i>
+                    <div class="nav__phone">
+                        <span>+48 123 456 789</span>
+                        <span>+48 987 654 321</span>
+                    </div>
+                </div>
+                <div class="nav__contact-adress">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="nav__adress">
+                        <span>ul. Wesoła 19,</span>
+                        <span>00-000 Warszawa</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header__text ">
+            <h1 class="header__text-title">Zadbaj o Swoje Zdrowie</h1>
+            <a href="#" class="header__text-link">Umów sie na wizytę</a>
+        </div>
+        <a href="#" class="arrowToTop"><i class="fas fa-arrow-up"></i></a>
+    </header>
+    <main>
+        <section class="info wrapper">
+            <div class="info__box info__box--one">
+                <h3 class="info__title"><i class="fas fa-user-md"></i>Wykwalifikowani Lekarze</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic officia esse
+                    assumenda molestias
+                    ullam.</p>
+            </div>
+            <div class="info__box info__box--two">
+                <h3 class="info__title"><i class="fas fa-ambulance"></i>Pomoc w nagłych wypadkach</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic officia esse
+                    assumenda molestias
+                    ullam.</p>
+            </div>
+            <div class="info__box info__box--three">
+                <h3 class="info__title"><i class="fas fa-hospital-user"></i>Całodobowa pomoc medyczna</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic officia esse
+                    assumenda molestias
+                    ullam.</p>
+            </div>
+        </section>
+        <section id="aboutUs" class="aboutUs wrapper">
+            <div class="aboutUs__info">
+                <h2 class="aboutUs__title">O Nas</h2>
+                <h3 class="aboutUs__postTitle">Klinika z <span>innowacyjnym</span> podejściem do leczenia</h3>
+                <p class="aboutUs__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quasi
+                    repudiandae temporibus earum expedita odit sed mollitia, nisi, illo tenetur dicta reiciendis vero,
+                    nulla id?</p>
+                <ul class="aboutUs__list">
+                    <li><i class="fas fa-check"></i>Poradnia Psychologiczna dla Dzieci i Dorosłych</li>
+                    <li><i class="fas fa-check"></i>Badania i Opercje Dentystyczne</li>
+                    <li><i class="fas fa-check"></i>Instytut Chorób Serca</li>
+                    <li><i class="fas fa-check"></i>Operacje Plastyczne</li>
+                    <li><i class="fas fa-check"></i>Opieka Pediatryczna</li>
+                    <li><i class="fas fa-check"></i>Laryngologia</li>
+                    <li><i class="fas fa-check"></i>Grupy Wsparcia</li>
+                </ul>
+                <a href="#" class="aboutUs__link">przeczytaj więcej</a>
+            </div>
+            <img src="./dist/img/aboutUsSmall.jpg" alt="Zdjęcie lekarzy" class="aboutUs__img">
+        </section>
+        <section class="horizontal">
+            <div class="wrapper">
+                <h2 class="horizontal__title">Wszytkie Typy Diagnoz</h2>
+                <p class="horizontal__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias culpa
+                    provident porro modi dolorem perferendis?</p>
+                <a href="#" class="horizontal__link">Darmowa Konsultacja</a>
+                <div class="horizontal__bg"></div>
+            </div>
+        </section>
+        <section class="departments wrapper" id="departments">
+            <h2 class="departments__title">Oddziały</h2>
+            <h3 class="departments__postTitle">Zapewniamy opiekę w <span>wielu</span> specjalizacjach</h3>
+            <div class="departments__cards">
+                <div class="departments__card">
+                    <h3 class="departments__card-title">Pediatria</h3>
+                    <div class="departments__card-body">
+                        <i class="fas fa-stethoscope departments__card-icon"></i>
+                        <p class="departments__card-body-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Laudantium, amet. Quod commodi tempora ipsum? Porro, minus!</p>
+                    </div>
+                    <a href="#" class="departments__card-link">Przeczytaj więcej <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="departments__card">
+                    <h3 class="departments__card-title">Neurologia</h3>
+                    <div class="departments__card-body">
+                        <i class="fas fa-brain departments__card-icon"></i>
+                        <p class="departments__card-body-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Laudantium, amet. Quod commodi tempora ipsum? Porro, minus!</p>
+                    </div>
+                    <a href="#" class="departments__card-link">Przeczytaj więcej <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="departments__card">
+                    <h3 class="departments__card-title">Okulistyka</h3>
+                    <div class="departments__card-body">
+                        <i class="fas fa-glasses departments__card-icon"></i>
+                        <p class="departments__card-body-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Laudantium, amet. Quod commodi tempora ipsum? Porro, minus!</p>
+                    </div>
+                    <a href="#" class="departments__card-link">Przeczytaj więcej <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="departments__card">
+                    <h3 class="departments__card-title">Kardiologia</h3>
+                    <div class="departments__card-body">
+                        <i class="fas fa-heart departments__card-icon"></i>
+                        <p class="departments__card-body-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Laudantium, amet. Quod commodi tempora ipsum? Porro, minus!</p>
+                    </div>
+                    <a href="#" class="departments__card-link">Przeczytaj więcej <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="departments__card">
+                    <h3 class="departments__card-title">Stomatologia</h3>
+                    <div class="departments__card-body">
+                        <i class="fas fa-tooth departments__card-icon"></i>
+                        <p class="departments__card-body-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Laudantium, amet. Quod commodi tempora ipsum? Porro, minus!</p>
+                    </div>
+                    <a href="#" class="departments__card-link">Przeczytaj więcej <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="departments__card">
+                    <h3 class="departments__card-title">Pulmonologia</h3>
+                    <div class="departments__card-body">
+                        <i class="fas fa-lungs departments__card-icon"></i>
+                        <p class="departments__card-body-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Laudantium, amet. Quod commodi tempora ipsum? Porro, minus!</p>
+                    </div>
+                    <a href="#" class="departments__card-link">Przeczytaj więcej <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="departments__card">
+                    <h3 class="departments__card-title">Medycyna rodzinna</h3>
+                    <div class="departments__card-body">
+                        <i class="fas fa-user-md departments__card-icon"></i>
+                        <p class="departments__card-body-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Laudantium, amet. Quod commodi tempora ipsum? Porro, minus!</p>
+                    </div>
+                    <a href="#" class="departments__card-link">Przeczytaj więcej <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="departments__card">
+                    <h3 class="departments__card-title">Diagnostyka labolatoryjna</h3>
+                    <div class="departments__card-body">
+                        <i class="fas fa-microscope departments__card-icon"></i>
+                        <p class="departments__card-body-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Laudantium, amet. Quod commodi tempora ipsum? Porro, minus!</p>
+                    </div>
+                    <a href="#" class="departments__card-link">Przeczytaj więcej <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="departments__card">
+                    <h3 class="departments__card-title">Chirurgia plastyczna</h3>
+                    <div class="departments__card-body">
+                        <i class="fas fa-syringe departments__card-icon"></i>
+                        <p class="departments__card-body-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Laudantium, amet. Quod commodi tempora ipsum? Porro, minus!</p>
+                    </div>
+                    <a href="#" class="departments__card-link">Przeczytaj więcej <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <div class="wrapper">
+                <h2 class="team__title">Nasi Lekarze</h2>
+                <h3 class="team__postTitle">Mamy <span>najlepszych</span> specjalistów w swoich dziedzinach</h3>
+                <div class="team__carousel">
+                    <div class="team__slide">
+                        <img src="./dist/img/doc1.jpg" alt="Dr Anna Kowalska">
+                        <a href="#" class="team__name">Dr Anna Kowalska</a>
+                        <p class="team__spec">Pediatra</p>
+                    </div>
+                    <div class="team__slide">
+                        <img src="./dist/img/doc2.jpg" alt="Dr Rajesh Maharishi">
+                        <a href="#" class="team__name">Dr Rajesh Maharishi</a>
+                        <p class="team__spec">Okulista</p>
+                    </div>
+                    <div class="team__slide">
+                        <img src="./dist/img/doc3.jpg" alt="Dr Mariusz Nowak">
+                        <a href="#" class="team__name">Dr Mariusz Nowak</a>
+                        <p class="team__spec">Neurochirurg</p>
+                    </div>
+                    <div class="team__slide">
+                        <img src="./dist/img/doc1.jpg" alt="Dr Anna Kowalska">
+                        <a href="#" class="team__name">Dr Anna Kowalska</a>
+                        <p class="team__spec">Pediatra</p>
+                    </div>
+                    <div class="team__slide">
+                        <img src="./dist/img/doc2.jpg" alt="Dr Rajesh Maharishi">
+                        <a href="#" class="team__name">Dr Rajesh Maharishi</a>
+                        <p class="team__spec">Okulista</p>
+                    </div>
+                    <div class="team__slide">
+                        <img src="./dist/img/doc3.jpg" alt="Dr Mariusz Nowak">
+                        <a href="#" class="team__name">Dr Mariusz Nowak</a>
+                        <p class="team__spec">Neurochirurg</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="gallery wrapper">
+            <h2 class="gallery__title">Nasza Galeria</h2>
+            <div class="gallery__tabs">
+                <button class="gallery__tab active">Wszystkie</button>
+                <button class="gallery__tab">Opieka</button>
+                <button class="gallery__tab">Technologia</button>
+                <button class="gallery__tab">Doświadczenie</button>
+            </div>
+            <div class="gallery__box">
+                <img src="./dist/img/gal1.jpg" alt="Gabinet dentytyczny" class='gallery__img' data-id="Technologia">
+                <img src="./dist/img/gal2.jpg" alt="Zadowolony pacjent" class='gallery__img' data-id="Opieka">
+                <img src="./dist/img/gal3.jpg" alt="Mikroskop" class='gallery__img' data-id="Technologia">
+                <img src="./dist/img/gal4.jpg" alt="Dyrektor naszej kliniki" class='gallery__img' data-id="Doświadczenie">
+                <img src="./dist/img/gal5.jpg" alt="Diagnoza" class='gallery__img' data-id="Opieka">
+                <img src="./dist/img/gal6.jpg" alt="Nowoczena sala operacyjna" class='gallery__img' data-id="Technologia">
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="wrapper">
+                <h2 class="contact__title">Kontakt</h2>
+                <h3 class="contact__postTitle">Masz pytnie? <span>Skontaktuj się </span> z nami</h3>
+                <div class="contact__box">
+                    <div class="contact__box-left">
+                        <div class="contact__box-item contact__box-item--one">
+                            <h4 class="contact__box-city">Warszawa</h4>
+                            <p>ul. Wesoła 19</p>
+                            <p>00-000, Warszawa, Polska</p>
+                            <p>+48 123 456 789</p>
+                            <p>+48 987 654 321</p>
+                            <p>adres@mailowy.pl</p>
+                        </div>
+                        <div class="contact__box-item contact__box-item--two">
+                            <h4 class="contact__box-city">Wrocław</h4>
+                            <p>ul. Polna 11</p>
+                            <p>00-000, Wrocław, Polska</p>
+                            <p>+48 000 000 000</p>
+                            <p>+48 111 111 111</p>
+                            <p>adres@mailowy.pl</p>
+                        </div>
+                        <div class="contact__box-item contact__box-item--three">
+                            <h4 class="contact__box-city">Gdańsk</h4>
+                            <p>ul. Długa 1</p>
+                            <p>00-000, Gdańsk, Polska</p>
+                            <p>+48 222 222 222</p>
+                            <p>+48 333 333 333</p>
+                            <p>adres@mailowy.pl</p>
+                        </div>
+                        <div class="contact__box-item contact__box-item--four">
+                            <h4 class="contact__box-city">Poznań</h4>
+                            <p>ul. Ptasia 21</p>
+                            <p>00-000, Poznań, Polska</p>
+                            <p>+48 444 444 444</p>
+                            <p>+48 555 555 555</p>
+                            <p>adres@mailowy.pl</p>
+                        </div>
+                    </div>
+                    <div class="contact__box-right">
+                        <form class="contact__form">
+                            <div class="contact__form-cell">
+                                <label class="contact__form-label">Imię:</label>
+                                <input type="text" class="contact__form-input" aria-label="First name">
+                            </div>
+                            <div class="contact__form-cell">
+                                <label class="contact__form-label">Nazwisko:</label>
+                                <input type="text" class="contact__form-input" aria-label="Last name">
+                            </div>
+                            <div class="contact__form-cell">
+                                <label for="inputEmail" class="contact__form-label">Email:</label>
+                                <input type="email" class="contact__form-input" id="inputEmail">
+                            </div>
+                            <div class="contact__form-cell">
+                                <label class="contact__form-label">Telefon:</label>
+                                <input class="contact__form-input">
+                            </div>
+                            <div class="contact__form-cell">
+                                <label class="contact__form-label">Twoja Wiadomość:</label>
+                                <textarea class="contact__form-input" rows="10"></textarea>
+                            </div>
+                            <button type="button" class="contact__form-button">Wyślij</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__box">
+                <!-- <a href="#" class="nav__logo"><i class="fab fa-medrt"></i>Med<span>Care</span></a> -->
+                <p class="footer__text">&copy; <span class="footer__year"></span> All Rights Reserved. <i
+                        class="fab fa-medrt"></i>Med<span>Care</span></p>
+
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="./dist/js/script.min.js"></script>
+
+</body>
+
+</html>
