@@ -59,6 +59,7 @@ body {
         &-link {
             @include btn;
             background-color: $lightWhite;
+            color: black;
 
             &:focus {
                 box-shadow: 0 0 10px rgb(94, 93, 93);
@@ -541,11 +542,12 @@ body {
 
 .contact {
     padding: 2em;
-    background-color: rgb(232, 247, 255);
 
     &__box {
         &-left {
-            padding: 2em 0;
+            text-align: center;
+            padding-bottom: 2em;
+            background-color: #fff;
         }
 
         &-city {
@@ -553,7 +555,36 @@ body {
         }
 
         &-item {
-            margin-bottom: 1.5em;
+            margin-top: 1.5em;
+
+            i {
+                width: 50px;
+                height: 50px;
+                font-size: 2rem;
+                text-align: center;
+                margin-top: .7em;
+                padding: .7em;
+                border-radius: 50%;
+                background-color: $thirdMainColor;
+                color: $lightWhite;
+
+
+            }
+
+            &--info {
+                padding: 2em;
+                background-color: $mainColor;
+                color: $lightWhite;
+            }
+        }
+
+        &-right {
+            padding: 2em;
+            // border: 1px solid $mainColor;
+            border-radius: 8px;
+            background-color: rgb(232, 247, 255);
+            box-shadow: 0 0 10px $secondMainColor;
+
         }
     }
 
@@ -566,6 +597,7 @@ body {
     &__postTitle {
         font-size: 3rem;
         font-weight: bold;
+        margin-bottom: .7em;
 
         span {
             color: $thirdMainColor;
@@ -586,13 +618,16 @@ body {
         &-label,
         &-input {
             font-size: 1.8rem;
+
         }
 
         &-input {
+            position: relative;
             padding: .3em;
             margin-bottom: .7em;
             border-radius: 5px;
-            border: 1px solid $secondMainColor;
+            border: none;
+
         }
 
         &-button {
@@ -610,13 +645,19 @@ body {
 
 .footer {
     background-color: $mainColor;
+    border-top: 1px solid black;
 
     &__box {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         padding: .5em 0;
+        color: $lightWhite;
+
+        i,
+        span {
+            color: $thirdMainColor
+        }
     }
 
     &__text {
@@ -624,7 +665,7 @@ body {
     }
 }
 
-.arrowToTop{
+.arrowToTop {
     display: none;
     position: fixed;
     bottom: 2vh;
